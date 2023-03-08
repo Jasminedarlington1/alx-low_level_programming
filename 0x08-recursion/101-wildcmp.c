@@ -1,10 +1,11 @@
 #include "main.h"
 /**
  * wildcmp - compares two strings
- * *s1: string 1
- * *s2: string 2. It can contain a * as a special character
+ * *s1: string being compared
+ * *s2: string being compared. It can contain a * as a special character
  * Return: 1 if they are identical, 0 if not
  */
+
 int wildcmp(char *s1, char *s2)
 {
 	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')

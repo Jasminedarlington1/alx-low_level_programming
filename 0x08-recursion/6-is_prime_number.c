@@ -21,7 +21,7 @@ int helperfunction(int num, int i)
 	return (1);
 }
 /**
- * is _prime_number - function that returns 1 if the input integer
+ * is_prime_number - function that returns 1 if the input integer
  * is a prime number, otherwise return 0
  * @n: input
  * Return: 1 if its a primenumber otherwise 0
