@@ -5,8 +5,7 @@
  * to flip to get from one number to another.
  * @n: input
  * @m: input
- * Return: returns the number of bits you would need to
- * flip to get from one number to another.
+ * Return: returns the number of bits
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
@@ -17,5 +16,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		b += (xor & 1);
 		xor >>= 1;
 	}
+
 	return (b);
 }
