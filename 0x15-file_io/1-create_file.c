@@ -20,7 +20,7 @@ int create_file(const char *filename, char *text_content)
 		for (c = 0; text_content[c];)
 			c++;
 	}
-	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 2);
+	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	w = write(fd, text_content, c);
 
 	if (fd == -1 || w == -1)
